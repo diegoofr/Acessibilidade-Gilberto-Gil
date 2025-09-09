@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gilberto Gil - Tropicália</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+  <!-- Menu de acessibilidade -->
+  <nav class="accessibility-menu" aria-label="Menu de acessibilidade">
+    <ul>
+      <li><button onclick="increaseFont()">A+</button></li>
+      <li><button onclick="decreaseFont()">A-</button></li>
+      <li><button onclick="toggleContrast()">Contraste</button></li>
+      <li><a href="#conteudo" tabindex="0">Ir para o conteúdo</a></li>
+    </ul>
+  </nav>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light" aria-label="Menu principal">
+    <div class="container">
+      <a class="navbar-brand" href="#">Gilberto Gil</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+        aria-controls="menu" aria-expanded="false" aria-label="Abrir menu de navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <header class="text-center p-5 banner" role="banner" aria-label="Boas-vindas">
+    <h1 tabindex="0">Bem-vindos ao universo de Gilberto Gil</h1>
+    <p tabindex="0">Um dos maiores nomes da Tropicália e da música brasileira</p>
+    <a href="#sobre" class="btn btn-primary">Quero conhecer</a>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main id="conteudo" class="container my-5">
+    <!-- Sobre -->
+    <section id="sobre" aria-labelledby="titulo-sobre">
+      <h2 id="titulo-sobre" class="text-center mb-4">Quem é Gilberto Gil?</h2>
+      <p tabindex="0">
+       Gilberto Gil
+
+Gilberto Gil é um dos maiores ícones da música brasileira e uma das personalidades culturais mais influentes do país. Cantor, compositor, multi-instrumentista e também ex-ministro da Cultura, ele construiu uma carreira marcada pela inovação, diversidade musical e engajamento social.
+
+Nascido em Salvador, na Bahia, em 26 de junho de 1942, Gil começou sua trajetória artística ainda jovem, inspirado pelas tradições musicais nordestinas e pela bossa nova. Nos anos 1960, ao lado de Caetano Veloso, Gal Costa, Tom Zé e outros artistas, foi um dos fundadores do movimento Tropicália, que revolucionou a música brasileira ao misturar ritmos populares, influências internacionais e forte crítica social.
+
+Sua obra atravessa décadas e estilos, transitando do samba ao reggae, do baião ao rock, sempre com uma identidade própria. Entre suas canções mais conhecidas estão clássicos como Aquele Abraço, Domingo no Parque, Refazenda, Vamos Fugir e Andar com Fé.
+
+Além da música, Gilberto Gil teve uma atuação significativa na vida pública. Entre 2003 e 2008, foi Ministro da Cultura do Brasil, defendendo políticas voltadas para a democratização do acesso à cultura e a valorização da diversidade artística do país.
+
+Reconhecido mundialmente, Gil recebeu diversos prêmios ao longo da carreira, incluindo o Grammy Awards e o Grammy Latino, além de títulos honorários de universidades internacionais e condecorações pelo impacto cultural de sua obra.
+
+Com mais de 60 anos de carreira, Gilberto Gil continua sendo um símbolo de criatividade, liberdade e brasilidade, inspirando gerações e reafirmando a música como instrumento de transformação social e expressão artística universal.
+      </p>
+    </section>
+
+    <!-- Galeria -->
+  <section id="galeria" aria-labelledby="titulo-galeria" class="my-5">
+  <h2 id="titulo-galeria" class="text-center">Galeria</h2>
+  <div class="row g-4 mt-2 justify-content-center">
+    
+    <div class="col-12 col-md-6 d-flex justify-content-center">
+      <div class="gallery-tile">
+        <img src="img/gil_solo.jpg" alt="Gilberto Gil tocando violão no show">
+      </div>
+    </div>
+    
+    <div class="col-12 col-md-6 d-flex justify-content-center">
+      <div class="gallery-tile">
+        <img src="img/gil_banda.jpg" alt="Gilberto Gil com sua banda em show">
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+    <!-- Contato -->
+    <section id="contato" aria-labelledby="titulo-contato" class="my-5">
+      <h2 id="titulo-contato" class="text-center">Entre em contato</h2>
+      <form class="mt-4" aria-label="Formulário de contato">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" id="nome" class="form-control" tabindex="0" aria-required="true">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" id="email" class="form-control" tabindex="0" aria-required="true">
+        </div>
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea id="mensagem" rows="4" class="form-control" tabindex="0"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="text-center p-3">
+    <p>Gilberto Gil - Site </p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
